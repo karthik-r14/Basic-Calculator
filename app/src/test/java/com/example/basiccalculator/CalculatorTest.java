@@ -18,5 +18,16 @@ public class CalculatorTest {
         assertEquals(10, calculator.add(5, 5));
     }
 
+    @Test
+    public void shouldReturn5OnSubtractionOf10With5() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(5, calculator.subtract(10, 5));
+    }
 
+    @Test
+    public void shouldReturn4OnSubtractionOf6With2() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(4, calculator.subtract(6, 2));
+
+    }
 }
