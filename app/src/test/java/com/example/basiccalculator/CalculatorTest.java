@@ -42,4 +42,16 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         assertEquals(10, calculator.multiply(5, 2));
     }
+
+    @Test
+    public void shouldReturn5OnDivisionOf10With2() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(5, calculator.divide(10, 2), 0.01);
+    }
+
+    @Test
+    public void shouldReturn10OnDivisionOf30With3() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(10, calculator.divide(30, 3), 0.01);
+    }
 }

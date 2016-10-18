@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         int number1 = getNumberOne();
         int number2 = getNumberTwo();
 
-        float result = (float) number1 / number2;
+        float result = calculator.divide(number1, number2);
         updateAnswer(result);
     }
 }
