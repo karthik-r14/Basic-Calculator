@@ -30,4 +30,16 @@ public class CalculatorTest {
         assertEquals(4, calculator.subtract(6, 2));
 
     }
+
+    @Test
+    public void shouldReturn8OnMultiplicationOf2With4() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(8, calculator.multiply(2, 4));
+    }
+
+    @Test
+    public void shouldReturn10OnMultiplicationOf5With2() throws Exception {
+        Calculator calculator = new Calculator();
+        assertEquals(10, calculator.multiply(5, 2));
+    }
 }

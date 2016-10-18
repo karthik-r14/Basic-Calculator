@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         int number1 = getNumberOne();
         int number2 = getNumberTwo();
 
-        int result = number1 * number2;
+        int result = calculator.multiply(number1, number2);
         updateAnswer(result);
     }
 
