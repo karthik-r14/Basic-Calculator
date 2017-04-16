@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     private int getNumberOne() {
         EditText editText1 = (EditText) findViewById(R.id.editText);
         return Integer.parseInt(editText1.getText().toString());
-
     }
 
     private int getNumberTwo() {
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     private void updateAnswer(float result) {
         TextView textView = (TextView) findViewById(R.id.textView2);
         textView.setText(Float.toString(result));
-
     }
 
     public void onAddButtonClick(View view) {
