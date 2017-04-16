@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Basic Calculator</string>
+  <string name="number_1">Number 1</string>
+  <string name="number_2">Number 2</string>
+  <string name="answer">answer</string>
+  <string name="enter_number1">Enter number 1</string>
+  <string name="enter_number2">Enter number 2</string>
+  <string name="operator_addition">+</string>
+  <string name="operator_subtraction">-</string>
+  <string name="operator_division">/</string>
+  <string name="operator_multiply">X</string>
+  <string name="zero">0</string>
 </resources>

@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         String number1 = editText1.getText().toString();
 
         if (number1.trim().equals("")) {
-            Toast.makeText(getApplicationContext(), "Enter number 1", LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.enter_number1, LENGTH_SHORT).show();
             return 0;
 
         }
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         String number2 = editText2.getText().toString();
 
         if (number2.trim().equals("")) {
-            Toast.makeText(getApplicationContext(), "Enter number 2", LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.enter_number2, LENGTH_SHORT).show();
             return 0;
         }
 
