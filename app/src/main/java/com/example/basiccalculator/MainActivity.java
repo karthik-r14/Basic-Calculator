@@ -1,10 +1,13 @@
 package com.example.basiccalculator;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import static android.widget.Toast.LENGTH_SHORT;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,12 +22,27 @@ public class MainActivity extends AppCompatActivity {
 
     private int getNumberOne() {
         EditText editText1 = (EditText) findViewById(R.id.editText);
-        return Integer.parseInt(editText1.getText().toString());
+        String number1 = editText1.getText().toString();
+
+        if (number1.trim().equals("")) {
+            Toast.makeText(getApplicationContext(), "Enter number 1", LENGTH_SHORT).show();
+            return 0;
+
+        }
+
+        return Integer.parseInt(number1);
     }
 
     private int getNumberTwo() {
         EditText editText2 = (EditText) findViewById(R.id.editText2);
-        return Integer.parseInt(editText2.getText().toString());
+        String number2 = editText2.getText().toString();
+
+        if (number2.trim().equals("")) {
+            Toast.makeText(getApplicationContext(), "Enter number 2", LENGTH_SHORT).show();
+            return 0;
+        }
+
+        return Integer.parseInt(number2);
     }
 
     private void updateAnswer(float result) {
